@@ -6,10 +6,11 @@
 
 **Team Name:** T34
 
-| Team Member Name | Email Address | GitHub Username |
-| ---------------- | ------------- | --------------- |
-| [Dhruva Jindal]         | [Email ]     | [Username 1]    |
-| [Benjamin Abt]         | [bencabt@seas.upenn.edu]     | [bencabt]    |
+| Team Member Name | Email Address          | GitHub Handle |
+| ---------------- | ---------------------- | ------------- |
+| Dhruva Jindal    | djindal@seas.upenn.edu | jindaldhruva  |
+| Benjamin Abt     | bencabt@seas.upenn.edu | bencabt       |
+
 
 **GitHub Repository URL:**
 
