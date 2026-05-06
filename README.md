@@ -2,14 +2,14 @@
 
 # a11g-final-submission
 
-**Team Number:**
+**Team Number:** 34
 
-**Team Name:**
+**Team Name:** T34
 
 | Team Member Name | Email Address | GitHub Username |
 | ---------------- | ------------- | --------------- |
-| [Name 1]         | [Email 1]     | [Username 1]    |
-| [Name 2]         | [Email 2]     | [Username 2]    |
+| [Dhruva Jindal]         | [Email ]     | [Username 1]    |
+| [Benjamin Abt]         | [bencabt@seas.upenn.edu]     | [bencabt]    |
 
 **GitHub Repository URL:**
 
