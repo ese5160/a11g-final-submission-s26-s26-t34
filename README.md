@@ -17,6 +17,14 @@
 ## 1. Video Presentation
 
 ## 2. Project Summary
+Device Description: 
+* The device is an IOT power bank, allowing one to monitor the charging of their devices remotely, turning it on and off as desired. The device has an integrated solar panel, giving your devices extra juice even if the on board batteries are dead.
+* The project was inspired by a desire to learn about power circuits, giving us a perfect platform to do so. The added solar panel solves a problem we often experience, that being, a dead power bank is useless.
+* Usage of internet connectivity allows us to monitor the device remotely, as well as control it.
+
+Device Functionality
+* The device is designed to take in power via 2x batteries and 1x solar panel. ICs convert power to charge the connected device, as well as to provide power for the device peripherals.
+* The device has 2x I2C voltage and current sensors, an SPI controlled display, a solar panel, 
 
 ## 3. Hardware & Software Requirements
 
