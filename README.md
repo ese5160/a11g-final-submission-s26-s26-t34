@@ -86,10 +86,13 @@ Software Requirements:
 
 ## 4. Project Photos & Screenshots
 
+![1778122941498](image/README/1778122941498.png)
+
+![1778122954781](image/README/1778122954781.png)
+
+![1778123382801](image/README/1778123382801.png)
+
 ## 5. Codebase
 
-Do _not_ commit any of your source code to this repository. Rather, provide links to the other GitHub repository you've already been using with your firmware.
-
-- A link to your final embedded C firmware codebases
-- A link to your Node-RED dashboard code
-- Links to any other software required for the functionality of your device
+- [Firmware](https://github.com/ese5160/final-project-firmware-s26-t34)
+- [Node-RED ](p://4.154.37.167:1880/dashboard)
