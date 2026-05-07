@@ -15,6 +15,8 @@
 
 ## 1. Video Presentation
 
+[Demo](https://youtu.be/_I91xZLqs-A)
+
 ## 2. Project Summary
 
 Device Description:
@@ -56,29 +58,31 @@ Project Links:
 ## 3. Hardware & Software Requirements
 
 Hardware Requirements:
-| ID | Requirement Description | Notes |
-|--------|------------------------------------------------------------------------------------------|-------|
-| HRS-01 | The device shall store energy in a rechargeable battery pack capable of powering external consumer electronics. | |
-| HRS-02 | The device shall measure internal temperature to ensure safe operation during charging and discharging. | |
-| HRS-03 | The device shall physically enable or disable power delivery to connected devices under software control. | |
-| HRS-04 | The device shall support charging from a wired power source. | |
-| HRS-05 | The device shall optionally support charging from a solar power source. | |
-| HRS-06 | The device shall automatically charge the battery when sufficient solar power is available. | |
-| HRS-07 | The device shall support a low-power operating mode to reduce energy consumption when output power is disabled. | |
-| HRS-08 | The device shall limit or shut down power delivery under unsafe operating conditions, including high temperature or low battery level. | |
+
+| ID     | Requirement Description                                                                                                                | Notes                                                                                                                                                                  |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| HRS-01 | The device shall store energy in a rechargeable battery pack capable of powering external consumer electronics.                        | Untested due to chip issues.                                                                                                                                           |
+| HRS-02 | The device shall measure internal temperature to ensure safe operation during charging and discharging.                                | We integrated a voltage and current sensor which was able to communicate to our UI via MQTT.                                                                           |
+| HRS-03 | The device shall physically enable or disable power delivery to connected devices under software control.                              | We proved the ability to flip a bit on the dev board via our HMI.                                                                                                      |
+| HRS-04 | The device shall support charging from a wired power source.                                                                           | Untested due to chip issues.                                                                                                                                           |
+| HRS-05 | The device shall optionally support charging from a solar power source.                                                                | Untested due to chip issues.                                                                                                                                           |
+| HRS-06 | The device shall automatically charge the battery when sufficient solar power is available.                                            | Untested due to chip issues.                                                                                                                                           |
+| HRS-07 | The device shall support a low-power operating mode to reduce energy consumption when output power is disabled.                        | Untested due to chip issues.                                                                                                                                           |
+| HRS-08 | The device shall limit or shut down power delivery under unsafe operating conditions, including high temperature or low battery level. | We were able to monitor for unsafe operating conditions via MQTT and flip a bit via our HMI, but never tested the combination of the two. This should have been done.  |
 
 Software Requirements:
-| ID | Requirement Description | Notes |
-|--------|------------------------------------------------------------------------------------------|-------|
-| SRS-01 | The system shall display the current battery level and charging status on an online dashboard. | |
-| SRS-02 | The system shall provide historical visibility into battery usage, including total energy discharged over time. | |
-| SRS-03 | The system shall notify the user when the battery level falls below a user-configurable threshold. | |
-| SRS-04 | The system shall allow the user to remotely enable or disable power output. | |
-| SRS-05 | The system shall allow the user to configure a maximum discharge duration after which output power is automatically disabled. | |
-| SRS-06 | The system shall allow the user to define scheduled time windows during which power output is disabled. | |
-| SRS-07 | The system shall enforce a minimum battery reserve level below which output power is automatically disabled. | |
-| SRS-08 | The system shall notify the user when abnormal operating conditions occur, including overheating or unexpected power shutdown. | |
-| SRS-09 | The system shall continue enforcing safety and power policies when network connectivity is unavailable. | |
+
+| ID     | Requirement Description                                                                                                        | Notes                                                                                            |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| SRS-01 | The system shall display the current battery level and charging status on an online dashboard.                                 | We display voltage and current.                                                                  |
+| SRS-02 | The system shall provide historical visibility into battery usage, including total energy discharged over time.                | Voltage and current history was recorded via Node Red.                                           |
+| SRS-03 | The system shall notify the user when the battery level falls below a user-configurable threshold.                             | This did not happen but should have been done via the work we did in Node Red.                   |
+| SRS-04 | The system shall allow the user to remotely enable or disable power output.                                                    | We remotely flipped a bit.                                                                       |
+| SRS-05 | The system shall allow the user to configure a maximum discharge duration after which output power is automatically disabled.  | This did not occur.                                                                              |
+| SRS-06 | The system shall allow the user to define scheduled time windows during which power output is disabled.                        | This did not occur.                                                                              |
+| SRS-07 | The system shall enforce a minimum battery reserve level below which output power is automatically disabled.                   | This did not occur.                                                                              |
+| SRS-08 | The system shall notify the user when abnormal operating conditions occur, including overheating or unexpected power shutdown. | The architecture was in place to monitor these tasks, the notifications did not get implemented. |
+| SRS-09 | The system shall continue enforcing safety and power policies when network connectivity is unavailable.                        | FAIL!                                                                                            |
 
 ## 4. Project Photos & Screenshots
 
